@@ -7,6 +7,7 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps: #all steps of check-bats-version
+      - uses: actions/hello-world-action/action-one.yml@v1
       - uses: actions/checkout@v2 # STEP 1
       - uses: actions/setup-node@v2 # STEP 2
         with:
