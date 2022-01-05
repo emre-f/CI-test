@@ -1,0 +1,16 @@
+name: my-workflow #optional
+on:
+  push:
+    paths-ignore:
+      - 'wrong-docs/**'
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps: #all steps of check-bats-version
+      - uses: actions/checkout@v2 # STEP 1
+      - uses: actions/setup-node@v2 # STEP 2
+        with:
+          node-version: '14'
+      - run: npm install -g bats # STEP 3: using npm to download the bats package
+      - run: bats -v # STEP 4
+
