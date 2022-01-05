@@ -4,9 +4,9 @@ name: DIFF Action 🕵️
   uses: GuillaumeFalourd/diff-action@v1
   with:
     # repo/path/file.txt
-    first_file_path: 
+    first_file_path: CI-test/test-files/tst-1.txt
     # repo/path/file.txt
-    second_file_path: 
+    second_file_path: CI-test/test-files/tst-2.txt
     # PASSED or FAILED
     expected_result: # optional, default is PASSED
     # file line to compare
