@@ -1,6 +1,9 @@
 name: my-workflow #optional
 on:
   push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
     paths-ignore:
       - 'wrong-docs/**'
 jobs:
