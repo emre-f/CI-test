@@ -1,5 +1,6 @@
 name: my-workflow #optional
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
   pull_request:
